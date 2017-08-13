@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'ExtraBold'; /*a name to be used later*/
+    src: url('../fonts/OpenSans-ExtraBold.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Regular'; /*a name to be used later*/
+    src: url('../fonts/OpenSans-Regular.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Inconsolata'; /*a name to be used later*/
+    src: url('../fonts/Inconsolata.otf'); /*URL to font*/
+}
+header, footer {
+    background-color: #EDDCBB;
+    color: #443412;
+    padding:20px;
+    text-align: center;
+    font-family: 'ExtraBold';
+}
+h3{
+      color: #304C83;
+}
+body{
+    background-color : #F9FAFB;
+    color: #222834;
+    font-family: 'Regular';
+}
+#orderlist-official{
+   color: #304C83;
+}
+#orderlist-unofficial{
+    color: #304C83;
+}
+nav {
+ background-color: #363636;
+ width: 100%;
+ font-family: 'Regular';
+}
+
+section, article {
+  background-color : #F9FAFB;
+  padding: 10px;
+  font-family: 'Regular';
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+pre{
+    font-size: 100%;
+    font-family: 'Inconsolata';
+}
