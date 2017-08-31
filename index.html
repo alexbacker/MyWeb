@@ -21,9 +21,32 @@
     <link async href="http://fonts.googleapis.com/css?family=Anton" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
     <link async href="http://fonts.googleapis.com/css?family=Warnes" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
 
+
+	<!--iOS -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+	<script src="js/main.js"></script>
+
 </head>
 
 <body>
+
+    <div id="loader-wrapper">
+		<div id="loader"></div>
+	    <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
     <header class="container-fluid">
         Alex 's Web Nexus
     </header>
@@ -43,10 +66,14 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="#">&emsp;&emsp;&emsp;&emsp;</a></li>
-                    <li><a class="hvr-underline-from-center" href="index.html">Home</a></li>
+                    <li><a class="hvr-underline-from-center" href="index.html" id ="Home">Home</a></li>
                     <li><a class="hvr-underline-from-center" href="code.html">Code</a></li>
                     <li><a class="hvr-underline-from-center" href="https://duckduckgo.com/">Duck Duckk Go</a></li>
                     <li><a class="hvr-underline-from-center" href="#contact">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="hvr-underline-from-center" href="#"><span class="glyphicon glyphicon-user"></span> About Me</a></li>
+                    <li><a href="#">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
