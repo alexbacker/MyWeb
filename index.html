@@ -7,129 +7,105 @@
     <link href="css/app.css" rel="stylesheet" />
     <!---->
     <link href="css/sidebar.css" rel="stylesheet" />
+    <link href="css/nav.css" rel="stylesheet" />
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <!-- Optional theme -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
+
+    <link async href="http://fonts.googleapis.com/css?family=Anton" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+    <link async href="http://fonts.googleapis.com/css?family=Warnes" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+
 </head>
 
 <body>
     <header class="container-fluid">
-        <h1>Alex 's Web Nexus</h1>
+        Alex 's Web Nexus
     </header>
 
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                 <span class="icon-bar"></span>                        
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
             </button>
-
-            <div class="collapse navbar-collapse">
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="#">&emsp;&emsp;&emsp;&emsp;</a></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="code.html">Code</a></li>
-                    <li><a href="https://duckduckgo.com/">Duckduckgo</a></li>
-                    <li><a href="#contact">Contract</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> About Me</a></li>
-                    <li><a href="#">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</a></li>
+                    <li><a class="hvr-underline-from-center" href="index.html">Home</a></li>
+                    <li><a class="hvr-underline-from-center" href="code.html">Code</a></li>
+                    <li><a class="hvr-underline-from-center" href="https://duckduckgo.com/">Duck Duckk Go</a></li>
+                    <li><a class="hvr-underline-from-center" href="#contact">Contact</a></li>
                 </ul>
             </div>
+            <!-- /.navbar-collapse -->
         </div>
+        <!-- /.container-fluid -->
     </nav>
 
-    <div class="wrapper">
-        <!-- Sidebar -->
-        <!-- <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#">
-                        Start Bootstrap
-                    </a>
-                </li>
-                <li>
-                    <a href="#">Dashboard</a>
-                </li>
-                <li>
-                    <a href="#">Shortcuts</a>
-                </li>
-                <li>
-                    <a href="#">Overview</a>
-                </li>
-                <li>
-                    <a href="#">Events</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div> -->
-        <!-- end Sidebar -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="row">
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
 
-                    <section class="col-sm-7 col-sm-push-1">
-                        <div class="row">
-                            <article>
-                                <p>Tại một đất nước nổi tiếng du lịch có N (2 ≤ N ≤ 50) thành phố, trong thành phố thứ i (0
-                                    ≤ i ≤ N) có K i khu du lịch. Để các dịch vụ du lịch được tốt hơn, nhà chức trách của
-                                    từng thành phố muốn xây dựng các tuyến đường bộ nối các khu du lịch với nhau, sao cho
-                                    từ một khu du lịch này có thể đi đến khu du lịch kia trong cùng thành phố. Vì lý do kỹ
-                                    thuật, các tuyến đường bộ được xây dựng có chiều dài không quá X (Km).</p>
-                            </article>
+                <section class="col-sm-7 col-sm-push-1">
+                    <div class="row">
+                        <article>
+                            <p>Tại một đất nước nổi tiếng du lịch có N (2 ≤ N ≤ 50) thành phố, trong thành phố thứ i (0 ≤ i
+                                ≤ N) có K i khu du lịch. Để các dịch vụ du lịch được tốt hơn, nhà chức trách của từng thành
+                                phố muốn xây dựng các tuyến đường bộ nối các khu du lịch với nhau, sao cho từ một khu du
+                                lịch này có thể đi đến khu du lịch kia trong cùng thành phố. Vì lý do kỹ thuật, các tuyến
+                                đường bộ được xây dựng có chiều dài không quá X (Km).</p>
+                        </article>
 
-                            <article>
-                                <p>1. Hãy chỉ ra cách xây dựng các tuyến đường bộ cho từng thành phố sao cho tổng chiều dài
-                                    các tuyến đường là bé nhất. Biết rằng tồn tại ít nhất một cách xây dựng các tuyến đường
-                                    cho từng khu du lịch.
-                                </p>
-                                <p>2. Để phát triển hơn nữa dịch vụ du lịch, người ta dự định xây dựng các tuyến đường xe điện
-                                    ngầm nối các thành phố du lịch này với nhau, sao cho sau khi xây dựng, du khách có thể
-                                    di chuyển từ thành phố này này đến thành phố khác bất kỳ. Khoảng cách giữa hai thành
-                                    phố tp1 và tp2 được cho bởi khoảng cách ngắn nhất giữa hai khu du lịch (gọi là kdl1 và
-                                    kdl2) thuộc tp1 và tp2 tương ứng. Biết rằng nếu quyết định xây dựng đường xe điện ngầm
-                                    đi từ tp1 đến tp2 thì người ta sẽ xây dựng hai trạm xe điện ngầm ngay tại vị trí của
-                                    hai khu du lịch kdl1 và kdl2 nói trên. Đồng thời, đường xe điện ngầm sẽ là một đường
-                                    thẳng nối liền kdl1 và kdl2. Hãy chỉ ra một sơ đồ kết nối các trạm xe điện ngầm này với
-                                    nhau sao cho tổng chiều dài đường ray xây dựng cho các tuyến xe điện ngầm cho tất cả
-                                    các khu du lịch là nhỏ nhất.</p>
-                            </article>
-                        </div>
-                    </section>
-                    <aside class="col-sm-3 col-sm-push-1">
                         <article>
-                            <h4>Danh sách cac trang web hỗ trợ ảnh chính thức :</h4>
-                            <img src="https://unsplash.it/400/250/?random">
-                            <ol id="orderlist-official">
-                                <li><a href="https://unsplash.it/">Unsplash</a></li>
-                            </ol>
+                            <p>1. Hãy chỉ ra cách xây dựng các tuyến đường bộ cho từng thành phố sao cho tổng chiều dài các
+                                tuyến đường là bé nhất. Biết rằng tồn tại ít nhất một cách xây dựng các tuyến đường cho từng
+                                khu du lịch.
+                            </p>
+                            <p>2. Để phát triển hơn nữa dịch vụ du lịch, người ta dự định xây dựng các tuyến đường xe điện ngầm
+                                nối các thành phố du lịch này với nhau, sao cho sau khi xây dựng, du khách có thể di chuyển
+                                từ thành phố này này đến thành phố khác bất kỳ. Khoảng cách giữa hai thành phố tp1 và tp2
+                                được cho bởi khoảng cách ngắn nhất giữa hai khu du lịch (gọi là kdl1 và kdl2) thuộc tp1 và
+                                tp2 tương ứng. Biết rằng nếu quyết định xây dựng đường xe điện ngầm đi từ tp1 đến tp2 thì
+                                người ta sẽ xây dựng hai trạm xe điện ngầm ngay tại vị trí của hai khu du lịch kdl1 và kdl2
+                                nói trên. Đồng thời, đường xe điện ngầm sẽ là một đường thẳng nối liền kdl1 và kdl2. Hãy
+                                chỉ ra một sơ đồ kết nối các trạm xe điện ngầm này với nhau sao cho tổng chiều dài đường
+                                ray xây dựng cho các tuyến xe điện ngầm cho tất cả các khu du lịch là nhỏ nhất.</p>
                         </article>
-                        <article>
-                            <h4>Danh sách các trang web hỗ trợ không chính thức:</h4>
-                            <img src="images/ShuttersockFree.PNG" width="400px" height="250px" >
-                            <ol id="orderlist-unofficial">
-                                <li><a href="https://saveshutter.com/">Shuttersock Free Photo</a></li>
-                            </ol>
-                        </article>
-                    </aside>
-                </div>
+                    </div>
+                </section>
+                <aside class="col-sm-3 col-sm-push-1">
+                    <article>
+                        <h4>Danh sách các trang web hỗ trợ ảnh chính thức :</h4>
+                        <img src="https://unsplash.it/400/250/?random">
+                        <ol id="orderlist-official">
+                            <li><a href="https://unsplash.it/">Unsplash</a></li>
+                        </ol>
+                    </article>
+                    <article>
+                        <h4>Danh sách các trang web hỗ trợ không chính thức:</h4>
+                        <img src="images/ShuttersockFree.PNG" width="400px" height="250px">
+                        <ol id="orderlist-unofficial">
+                            <li><a href="https://saveshutter.com/">Shuttersock Free Photo</a></li>
+                        </ol>
+                    </article>
+                </aside>
             </div>
         </div>
+    </div>
+    
+    <div id="contact-content-wrapper">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-3 col-sm-push-1">
@@ -138,14 +114,14 @@
                     <p><a href="https://bitbucket.org/TQH_Alex/">Bitbucket</a></p>
                 </div>
                 <div class="col-sm-9 col-sm-pull-3">
-
                 </div>
             </div>
         </div>
+    </div>
 
-        <footer class="container-fluid">
-            Copyright 2017
-        </footer>
+    <footer class="container-fluid">
+        Copyright 2017
+    </footer>
 </body>
 
 </html>

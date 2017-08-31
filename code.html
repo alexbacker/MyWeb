@@ -19,6 +19,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <link async href="http://fonts.googleapis.com/css?family=Anton" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+    <link async href="http://fonts.googleapis.com/css?family=Warnes" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+
+
 </head>
 
 <body>
@@ -50,156 +54,19 @@
         </div>
     </nav>
 
-
-
-
     <div id="page-content-wrapper">
         <div class="container-fluid">
             <div class="row">
                 <aside class="col-sm-7 col-sm-push-1">
                     <article>
-                        <h3>Code Exercise 3 :</h3>
+                        <h3>Code Exercise  :</h3>
                         <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Click to Open</button>
                         <div id="demo" class="collapse">
                             <pre class="prettyprint linenums">
- /*
- * add list
- */
-template <typename T>
-void timeAddList(std::list<Fraction<T> > &variableToProcess, int amountToAdd, Fraction<T> fraToAdd)
-{
-    for (int i = 0; i < amountToAdd; i++)
-    {
-        variableToProcess.push_back(fraToAdd);
-    }
-    cout << "Size of list is " << variableToProcess.size() << endl;
-}
+                                <code>
+                                    
 
-/*
- * add vector
- */
-template <typename T>
-void timeAddVector(std::vector<Fraction<T> > &variableToProcess, int amountToAdd, Fraction<T> fraToAdd)
-{
-    for (int i = 0; i < amountToAdd; i++)
-    {
-        variableToProcess.push_back(fraToAdd);
-    }
-    cout << "Size of vector is " << variableToProcess.size() << endl;
-}
-
-/*
- * add vector
- */
-template <typename T, typename U>
-void timeAddMap(std::map<U, Fraction<T> > &variableToProcess, int amountToAdd, Fraction<T> fraToAdd)
-{
-    for (int i = 0; i < amountToAdd; i++)
-    {
-        variableToProcess[i] = fraToAdd;
-    }
-    cout << "Size of map is " << variableToProcess.size() << endl;
-}
-
-/*
- *  remove list front
- */
-template <typename T>
-void timeRemoveFrontList(std::list<Fraction<T> > &variableToProcess, int amountToRemove)
-{
-    struct timespec start, finish;
-    double elapsed;
-    clock_gettime(CLOCK_MONOTONIC, &start); // start timer
-    for (int i = 0; i < amountToRemove; i++)
-    {
-        variableToProcess.pop_front();
-    }
-    clock_gettime(CLOCK_MONOTONIC, &finish); // end timer
-    elapsed = (finish.tv_sec - start.tv_sec);
-    elapsed += (finish.tv_nsec - start.tv_nsec) / 1000000000.0;
-
-    cout <<"Elapsed time " << elapsed <<" ||   Size of list is " << variableToProcess.size() << endl;
-}
-
-/*
- * remove vector front
- */
-template <typename T>
-void timeRemoveFrontVector(std::vector<Fraction<T> > &variableToProcess, int amountToRemove)
-{
-    struct timespec start, finish;
-    double elapsed;
-    clock_gettime(CLOCK_MONOTONIC, &start); // start timer 
-    for (int i = 0; i < amountToRemove; i++)
-    {
-        variableToProcess.erase(variableToProcess.begin());
-    }
-    clock_gettime(CLOCK_MONOTONIC, &finish); // end timer
-    elapsed = (finish.tv_sec - start.tv_sec);
-    elapsed += (finish.tv_nsec - start.tv_nsec) / 1000000000.0;
-
-    cout  << "Elapsed time " << elapsed << "  ||   Size of map is " << variableToProcess.size() << endl;
-}
-
-/*
- * Remove list back
- */
-template <typename T>
-void timeRemoveBackList(std::list<Fraction<T> > &variableToProcess, int amountToRemove)
-{
-    struct timespec start, finish;
-    double elapsed;
-    clock_gettime(CLOCK_MONOTONIC, &start); // start timer
-    for (int i = 0; i < amountToRemove; i++)
-    {
-        variableToProcess.pop_back();
-    }
-    clock_gettime(CLOCK_MONOTONIC, &finish); // end timer
-    elapsed = (finish.tv_sec - start.tv_sec);
-    elapsed += (finish.tv_nsec - start.tv_nsec) / 1000000000.0;
-
-    cout <<"Elapsed time " << elapsed <<"   ||   Size of list is " << variableToProcess.size() << endl;
-}
-
-/*
- * remove vector back
- */
-template <typename T>
-void timeRemoveBackVector(std::vector<Fraction<T> > &variableToProcess, int amountToRemove)
-{
-    struct timespec start, finish;
-    double elapsed;
-    clock_gettime(CLOCK_MONOTONIC, &start); // start timer 
-    for (int i = 0; i < amountToRemove; i++)
-    {
-        variableToProcess.pop_back();
-    }
-    clock_gettime(CLOCK_MONOTONIC, &finish); // end timer
-    elapsed = (finish.tv_sec - start.tv_sec);
-    elapsed += (finish.tv_nsec - start.tv_nsec) / 1000000000.0;
-
-    cout  << "Elapsed time " << elapsed << "    ||   Size of vecor is " << variableToProcess.size() << endl;
-}
-
-/*
- * remove vector back
- */
-template <typename T, typename U>
-void timeRemoveBackMap(std::map<U, Fraction<T> > &variableToProcess, int amountToRemove)
-{
-    struct timespec start, finish;
-    double elapsed;
-    clock_gettime(CLOCK_MONOTONIC, &start); // start timer
-    for (int i = variableToProcess.size() - amountToRemove; i < variableToProcess.size(); i++)
-    {
-        variableToProcess.erase(i);
-    }
-    clock_gettime(CLOCK_MONOTONIC, &finish); // end timer
-    elapsed = (finish.tv_sec - start.tv_sec);
-    elapsed += (finish.tv_nsec - start.tv_nsec) / 1000000000.0;
-
-    cout  << "Elapsed time " << elapsed << "    ||   Size of map is " << variableToProcess.size() << endl;
-}
+                                </code>
                             </pre>
                         </div>
                     </article>
@@ -207,37 +74,6 @@ void timeRemoveBackMap(std::map<U, Fraction<T> > &variableToProcess, int amountT
             </div>
         </div>
     </div>
-
-    <!-- <script>
-        function w3_open() {
-            document.getElementById("main").style.marginLeft = "20%";
-            document.getElementById("mySidebar").style.width = "20%";
-            document.getElementById("mySidebar").style.display = "block";
-            document.getElementById("openNav").style.display = 'none';
-        }
-        function w3_close() {
-            document.getElementById("main").style.marginLeft = "0%";
-            document.getElementById("mySidebar").style.display = "none";
-            document.getElementById("openNav").style.display = "inline-block";
-        }
-    </script> -->
-    <!-- Sidebar -->
-    <!-- <div class="w3-sidebar w3-bar-block w3-card-2 w3-animate-left" style="display:none" id="mySidebar">
-        <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
-        <a href="index.html" class="w3-bar-item w3-button">Home</a>
-        <a href="https://duckduckgo.com/" class="w3-bar-item w3-button">Duckduckgo</a>
-        <a href="code.html" class="w3-bar-item w3-button">Code</a>
-        <a href="#contact" class="w3-bar-item w3-button">Contract</a>
-    </div> -->
-    <!-- begin of w3 sidebar -->
-    <!-- <div zclass="w3-main" id="main">
-
-        <div class="w3-teal">
-            <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
-
-        </div>
-    </div> -->
-    <!-- end of w3 sidebar -->
 </body>
 
 </html>
