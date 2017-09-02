@@ -23,12 +23,19 @@ header {
     box-sizing: content-box;
     margin: 0 auto;
     border: none;
-    font: normal 70px/normal "Anton", Helvetica, sans-serif;
+    font: normal 50px/normal "Anton", Helvetica, sans-serif;
     text-transform: uppercase;
     -o-text-overflow: clip;
     text-overflow: clip;
     letter-spacing: 10px;
     text-shadow: 4px 4px 0 rgb(238,238,238) , 6px 6px 0 rgb(112,112,112) ;    
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 footer {
     background-color: #EDDCBB;
@@ -38,8 +45,32 @@ footer {
     text-align: center;
     font-family: 'ExtraBold';
     font-size: 120%;
+    /* width: 100%;
+    clear: both; to clear it */
+    position: relative;
+    margin-top: -150px; /* negative value of footer height */
+    height: 60px;
+    clear:both;
+    padding-top:20px;
+        
+}
+/* .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #f5f5f5;
+} */
+audio {
+    width: 100%; 
 }
 
+#main {
+    min-height: 100% !important;
+    height: 100% !important;
+    margin: 0 auto -33px;
+}
 /* page-header {
     color: #fff;
     text-align: center;
@@ -54,6 +85,7 @@ body{
     color: #222834;
     font-family: 'Regular';
 }
+
 #orderlist-official{
    color: #304C83;
 }

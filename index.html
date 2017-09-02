@@ -5,45 +5,56 @@
 <head>
     <title>Alex Backer Tips</title>
     <link href="css/app.css" rel="stylesheet" />
+
     <!---->
     <link href="css/sidebar.css" rel="stylesheet" />
     <link href="css/nav.css" rel="stylesheet" />
+    <link href="css/nav-new.css" rel="stylesheet" />
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
+
     <!-- Optional theme -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
 
-    <link async href="http://fonts.googleapis.com/css?family=Anton" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
-    <link async href="http://fonts.googleapis.com/css?family=Warnes" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+    <!-- font for title -->
+    <link async href="http://fonts.googleapis.com/css?family=Anton" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"
+    />
+    <link async href="http://fonts.googleapis.com/css?family=Warnes" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"
+    />
 
+    <!--iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!--iOS -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
+    <!-- font awesome -->
+
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
+    <!-- script for loading animation -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-	<script src="js/main.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')
+    </script>
+    <script src="js/main.js"></script>
 
 </head>
 
 <body>
 
     <div id="loader-wrapper">
-		<div id="loader"></div>
-	    <div class="loader-section section-left"></div>
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
     </div>
 
@@ -51,67 +62,59 @@
         Alex 's Web Nexus
     </header>
 
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="#">&emsp;&emsp;&emsp;&emsp;</a></li>
-                    <li><a class="hvr-underline-from-center" href="index.html" id ="Home">Home</a></li>
-                    <li><a class="hvr-underline-from-center" href="code.html">Code</a></li>
-                    <li><a class="hvr-underline-from-center" href="https://duckduckgo.com/">Duck Duckk Go</a></li>
-                    <li><a class="hvr-underline-from-center" href="#contact">Contact</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a class="hvr-underline-from-center" href="#"><span class="glyphicon glyphicon-user"></span> About Me</a></li>
-                    <li><a href="#">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</a></li>
+
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+            <div id="cssmenu">
+                <ul>
+                    <li id="disable">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</li>
+                    <!-- add class active to hightlight location -->
+                    <li class="active"><a href="index.html"><i class="fa fa-home fa-lg fa-fw" aria-hidden="true">
+                        </i>&nbsp; Home</a></li>
+                    <li><a href="code.html">Code</a></li>
+                    <li><a href="#"><span>Company</span></a></li>
+                    <li class="last"><a href="#"><i class="fa fa-phone fa-lg" aria-hidden="true">
+                        </i>&nbsp; Contact</a></li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
-    </nav>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
 
     <div id="page-content-wrapper">
-        <div class="container-fluid">
+        <div id="main" class="container-fluid">
             <div class="row">
 
                 <section class="col-sm-7 col-sm-push-1">
-                    <div class="row">
-                        <article>
-                            <p>Tại một đất nước nổi tiếng du lịch có N (2 ≤ N ≤ 50) thành phố, trong thành phố thứ i (0 ≤ i
-                                ≤ N) có K i khu du lịch. Để các dịch vụ du lịch được tốt hơn, nhà chức trách của từng thành
-                                phố muốn xây dựng các tuyến đường bộ nối các khu du lịch với nhau, sao cho từ một khu du
-                                lịch này có thể đi đến khu du lịch kia trong cùng thành phố. Vì lý do kỹ thuật, các tuyến
-                                đường bộ được xây dựng có chiều dài không quá X (Km).</p>
-                        </article>
+                    <!-- <div class="row"> -->
+                    <article>
+                        <p>Tại một đất nước nổi tiếng du lịch có N (2 ≤ N ≤ 50) thành phố, trong thành phố thứ i (0 ≤ i ≤ N)
+                            có K i khu du lịch. Để các dịch vụ du lịch được tốt hơn, nhà chức trách của từng thành phố muốn
+                            xây dựng các tuyến đường bộ nối các khu du lịch với nhau, sao cho từ một khu du lịch này có thể
+                            đi đến khu du lịch kia trong cùng thành phố. Vì lý do kỹ thuật, các tuyến đường bộ được xây dựng
+                            có chiều dài không quá X (Km).</p>
+                    </article>
 
-                        <article>
-                            <p>1. Hãy chỉ ra cách xây dựng các tuyến đường bộ cho từng thành phố sao cho tổng chiều dài các
-                                tuyến đường là bé nhất. Biết rằng tồn tại ít nhất một cách xây dựng các tuyến đường cho từng
-                                khu du lịch.
-                            </p>
-                            <p>2. Để phát triển hơn nữa dịch vụ du lịch, người ta dự định xây dựng các tuyến đường xe điện ngầm
-                                nối các thành phố du lịch này với nhau, sao cho sau khi xây dựng, du khách có thể di chuyển
-                                từ thành phố này này đến thành phố khác bất kỳ. Khoảng cách giữa hai thành phố tp1 và tp2
-                                được cho bởi khoảng cách ngắn nhất giữa hai khu du lịch (gọi là kdl1 và kdl2) thuộc tp1 và
-                                tp2 tương ứng. Biết rằng nếu quyết định xây dựng đường xe điện ngầm đi từ tp1 đến tp2 thì
-                                người ta sẽ xây dựng hai trạm xe điện ngầm ngay tại vị trí của hai khu du lịch kdl1 và kdl2
-                                nói trên. Đồng thời, đường xe điện ngầm sẽ là một đường thẳng nối liền kdl1 và kdl2. Hãy
-                                chỉ ra một sơ đồ kết nối các trạm xe điện ngầm này với nhau sao cho tổng chiều dài đường
-                                ray xây dựng cho các tuyến xe điện ngầm cho tất cả các khu du lịch là nhỏ nhất.</p>
-                        </article>
-                    </div>
+                    <article>
+                        <p>1. Hãy chỉ ra cách xây dựng các tuyến đường bộ cho từng thành phố sao cho tổng chiều dài các tuyến
+                            đường là bé nhất. Biết rằng tồn tại ít nhất một cách xây dựng các tuyến đường cho từng khu du
+                            lịch.
+                        </p>
+                        <p>2. Để phát triển hơn nữa dịch vụ du lịch, người ta dự định xây dựng các tuyến đường xe điện ngầm
+                            nối các thành phố du lịch này với nhau, sao cho sau khi xây dựng, du khách có thể di chuyển từ
+                            thành phố này này đến thành phố khác bất kỳ. Khoảng cách giữa hai thành phố tp1 và tp2 được cho
+                            bởi khoảng cách ngắn nhất giữa hai khu du lịch (gọi là kdl1 và kdl2) thuộc tp1 và tp2 tương ứng.
+                            Biết rằng nếu quyết định xây dựng đường xe điện ngầm đi từ tp1 đến tp2 thì người ta sẽ xây dựng
+                            hai trạm xe điện ngầm ngay tại vị trí của hai khu du lịch kdl1 và kdl2 nói trên. Đồng thời, đường
+                            xe điện ngầm sẽ là một đường thẳng nối liền kdl1 và kdl2. Hãy chỉ ra một sơ đồ kết nối các trạm
+                            xe điện ngầm này với nhau sao cho tổng chiều dài đường ray xây dựng cho các tuyến xe điện ngầm
+                            cho tất cả các khu du lịch là nhỏ nhất.</p>
+                    </article>
+                    <!-- </div> -->
                 </section>
+
                 <aside class="col-sm-3 col-sm-push-1">
                     <article>
                         <h4>Danh sách các trang web hỗ trợ ảnh chính thức :</h4>
@@ -127,28 +130,39 @@
                             <li><a href="https://saveshutter.com/">Shuttersock Free Photo</a></li>
                         </ol>
                     </article>
+                    <audio src="music/Risk of Rain Soundtrack - Hit It Son.mp4" controls>
+                        <p>If you are reading this, it is because your browser does not support the audio element.</p>
+                    </audio>
                 </aside>
             </div>
         </div>
     </div>
-    
-    <div id="contact-content-wrapper">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-3 col-sm-push-1">
-                    <a name="contact">Contact Me</a>
-                    <p>HCM, Go Vap</p>
-                    <p><a href="https://bitbucket.org/TQH_Alex/">Bitbucket</a></p>
-                </div>
-                <div class="col-sm-9 col-sm-pull-3">
-                </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-7 col-sm-push-1">
+                <a name="contact">Contact Me</a>
+                <p>HCM, Go Vap</p>
+                <p><a href="https://bitbucket.org/TQH_Alex/">Bitbucket</a></p>
             </div>
         </div>
     </div>
 
-    <footer class="container-fluid">
-        Copyright 2017
+    <!-- <div id="#contact-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <footer class="container-fluid">
+                    Copyright 2017
+                </footer>
+            </div>
+        </div>
+    </div> -->
+    <footer class="footer">
+        <div class="container">
+            <span>Copyright 2017</span>
+        </div>
     </footer>
+
 </body>
 
 </html>

@@ -44,11 +44,17 @@
     margin-right: -250px;
 }
 
-/* #contact-content-wrapper{
+#contact-content-wrapper{
     width: 100%;
     position: absolute;
     padding: 15px;
-} */
+}
+
+#wrapper.toggled #contact-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
 
 /* Sidebar Styles */
 

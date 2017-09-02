@@ -8,6 +8,11 @@
     <!---->
     <link href="css/sidebar.css" rel="stylesheet" />
     <link href="css/nav.css" rel="stylesheet" />
+    <link href="css/nav-new.css" rel="stylesheet" />
+
+    <!-- font awesome -->
+
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
@@ -20,9 +25,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <link async href="http://fonts.googleapis.com/css?family=Anton" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
-    <link async href="http://fonts.googleapis.com/css?family=Warnes" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
-
+    <link async href="http://fonts.googleapis.com/css?family=Anton" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"
+    />
+    <link async href="http://fonts.googleapis.com/css?family=Warnes" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"
+    />
 
 </head>
 
@@ -31,48 +37,36 @@
         Alex 's Web Nexus
     </header>
 
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="#">&emsp;&emsp;&emsp;&emsp;</a></li>
-                    <li><a class="hvr-underline-from-center" href="index.html">Home</a></li>
-                    <li><a class="hvr-underline-from-center" href="code.html">Code</a></li>
-                    <li><a class="hvr-underline-from-center" href="https://duckduckgo.com/">Duck Duckk Go</a></li>
-                    <li><a class="hvr-underline-from-center" href="#contact">Contact</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a class="hvr-underline-from-center" href="#"><span class="glyphicon glyphicon-user"></span> About Me</a></li>
-                    <li><a href="#">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</a></li>
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+            <div id="cssmenu">
+                <ul>
+                    <li id="disable">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</li>
+                    <!-- add class active to hightlight location -->
+                    <li><a href="index.html"><i class="fa fa-home fa-lg fa-fw" aria-hidden="true">
+                        </i>&nbsp; Home</a></li>
+                    <li class="active"><a href="code.html">Code</a></li>
+                    <li><a href="#"><span>Company</span></a></li>
+                    <li class="last"><a href="#"><i class="fa fa-phone fa-lg" aria-hidden="true">
+                        </i>&nbsp; Contact</a></li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
-    </nav>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
 
     <div id="page-content-wrapper">
         <div class="container-fluid">
             <div class="row">
                 <aside class="col-sm-7 col-sm-push-1">
                     <article>
-                        <h3>Code Exercise  :</h3>
+                        <h3>Code Exercise :</h3>
                         <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Click to Open</button>
                         <div id="demo" class="collapse">
                             <pre class="prettyprint linenums">
                                 <code>
-                                    
-
                                 </code>
                             </pre>
                         </div>
