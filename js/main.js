@@ -12,11 +12,23 @@ Enjoy responsibly!
 
 */
 
-$(document).ready(function() {
-	
-	setTimeout(function(){
+$(document).ready(function () {
+
+	setTimeout(function () {
 		$('body').addClass('loaded');
-		$('h1').css('color','#222222');
+		$('h1').css('color', '#222222');
 	}, 150);
-	
+
+});
+$(document).ready(function GetClock() {
+	var d = new Date();
+	var nmonth = d.getMonth(), ndate = d.getDate(), nyear = d.getFullYear();
+	var nhour = d.getHours(), nmin = d.getMinutes();
+	if (nmin <= 9) nmin = "0" + nmin
+
+	document.getElementById('clockbox').innerHTML = "" + ndate + "/" + (nmonth + 1) + "/" + nyear + " " + nhour + ":" + nmin + "";
+},
+	window.onload = function () {
+	GetClock();
+	setInterval(GetClock, 1000);
 });
