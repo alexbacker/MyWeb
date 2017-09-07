@@ -16,6 +16,7 @@ $(document).ready(function () {
 
 	setTimeout(function () {
 		$('body').addClass('loaded');
+<<<<<<< HEAD
 		$('h1').css('color', '#222222');
 	}, 150);
 
@@ -31,4 +32,9 @@ $(document).ready(function GetClock() {
 	window.onload = function () {
 	GetClock();
 	setInterval(GetClock, 1000);
+=======
+		$('h1').css('color','#222222');
+	}, 800);
+	
+>>>>>>> master
 });
